@@ -4,7 +4,7 @@ using UnityEngine.InputSystem;
 public class PlayerMotor : MonoBehaviour
 {
     Vector2 direction;
-    Rigidbody2D rigidbody2D;
+    new Rigidbody2D rigidbody2D;
     public float speed = 6;
     public float jumpForce = 7;
     private bool canJump = true;

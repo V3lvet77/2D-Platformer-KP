@@ -155,8 +155,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: -178, y: 250}
-  m_SizeDelta: {x: -175.5343, y: -157.4705}
+  m_AnchoredPosition: {x: -389.97937, y: 212.46826}
+  m_SizeDelta: {x: -572.4001, y: -359.2344}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &28316142
 MonoBehaviour:
@@ -170,6 +170,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5ef98d54f9f1b3244ab53f1027518471, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  healthComponent: {fileID: 1048695808}
+  textComponent: {fileID: 1913129083}
 --- !u!114 &28316143
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2788,6 +2790,7 @@ GameObject:
   - component: {fileID: 1048695802}
   - component: {fileID: 1048695806}
   - component: {fileID: 1048695807}
+  - component: {fileID: 1048695808}
   m_Layer: 0
   m_Name: Player
   m_TagString: Untagged
@@ -2984,6 +2987,19 @@ BoxCollider2D:
   m_AutoTiling: 0
   m_Size: {x: 1, y: 1}
   m_EdgeRadius: 0
+--- !u!114 &1048695808
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1048695801}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 469dadd631f06b74d95b987bc2fbf917, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  maxHealth: 10
 --- !u!1 &1051721887
 GameObject:
   m_ObjectHideFlags: 0
@@ -4623,8 +4639,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 1, y: 1}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: -296, y: -250}
-  m_SizeDelta: {x: 200, y: 50}
+  m_AnchoredPosition: {x: -283.7, y: -72.883}
+  m_SizeDelta: {x: 331.5969, y: 115.7985}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1913129083
 MonoBehaviour:
@@ -4646,7 +4662,9 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: New Text
+  m_text: 'TEXT WAHOO
+
+'
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
