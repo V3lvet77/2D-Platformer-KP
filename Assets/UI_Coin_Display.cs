@@ -13,6 +13,6 @@ private void Awake()
 }
 private void CoinComp_CoinAmountChanged(float currentPoints, float amountChanged)
 {
-    coinText.text=currentPoints.ToString();
+    coinText.text="Coins: " + currentPoints.ToString();
 }
 }
